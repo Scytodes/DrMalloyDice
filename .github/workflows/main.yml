@@ -27,8 +27,8 @@ jobs:
           files: 'module.json'
         env:
           version: ${{ steps.get_version.outputs.VERSION_NUMBER }}
-          manifest: https://github.com/${{github.repository}}/releases/download/latest/system.json
-          download: https://github.com/${{github.repository}}/releases/download/${{ steps.get_version.outputs.VERSION }}/fvtt-paranoia-xp.zip
+          manifest: https://github.com/${{github.repository}}/releases/download/latest/module.json
+          download: https://github.com/${{github.repository}}/releases/download/${{ steps.get_version.outputs.VERSION }}/DrMalloyDice.zip
 
       - name: Zip files
         run: zip -r DrMalloyDice * -x ".github/*"
