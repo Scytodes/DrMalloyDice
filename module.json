@@ -3,7 +3,7 @@
 	"name": "DrMalloyDice",
 	"title": "Dice So Nice - Dice for the Dr Malloy Character",
 	"description": "Adds a set of 3D dice in the style of Dr Malloy to Dice-So-Nice ",
-	"version": "1.0.0",
+	"version": "0.1.0",
 	"minimumCoreVersion": "0.7.2",
 	"compatibleCoreVersion": "11",
 	"compatibility": {
@@ -35,5 +35,5 @@
 	],
 	"url": "https://github.com/scytodes/DrMalloyDice",
 	"manifest": "https://raw.githubusercontent.com/scytodes/DrMalloyDice/main/module.json",
-	"download": "https://github.com/scytodes/DrMalloyDice/archive/1.0.0.zip"
+	"download": "https://github.com/scytodes/DrMalloyDice/archive/0.1.0.zip"
 }
