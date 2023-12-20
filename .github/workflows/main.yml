@@ -31,7 +31,7 @@ jobs:
           download: https://github.com/${{github.repository}}/releases/download/${{ steps.get_version.outputs.VERSION }}/fvtt-paranoia-xp.zip
 
       - name: Zip files
-        run: zip -r fvtt-paranoia-xp * -x ".github/*"
+        run: zip -r DrMalloyDice * -x ".github/*"
 
      # Create a release for this specific version
       - name: Create Release
@@ -43,7 +43,7 @@ jobs:
           draft: false
           prerelease: false
           token: ${{ secrets.GITHUB_TOKEN }}
-          artifacts: './system.json,./DrMalloyDice.zip'
+          artifacts: './module.json,./DrMalloyDice.zip'
 
       # Update the 'latest' release
       - name: Create Release
@@ -55,5 +55,5 @@ jobs:
           draft: false
           prerelease: false
           token: ${{ secrets.GITHUB_TOKEN }}
-          artifacts: './system.json,./DrMalloyDice.zip'
+          artifacts: './module.json,./DrMalloyDice.zip'
           tag: latest
